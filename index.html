@@ -2,12 +2,77 @@
 <html>
 <head>
     <title>OpenClaw Dashboard</title>
+    <meta http-equiv="refresh" content="0; url=https://fe58-2601-646-100-38d0-40db-4e0d-e01-c714.ngrok-free.app">
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+        }
+        .container {
+            text-align: center;
+            max-width: 500px;
+            padding: 2rem;
+        }
+        .logo {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+        }
+        .title {
+            font-size: 2rem;
+            margin-bottom: 1rem;
+            font-weight: 600;
+        }
+        .subtitle {
+            font-size: 1.2rem;
+            margin-bottom: 2rem;
+            opacity: 0.9;
+        }
+        .link {
+            display: inline-block;
+            background: rgba(255, 255, 255, 0.2);
+            padding: 1rem 2rem;
+            border-radius: 8px;
+            color: white;
+            text-decoration: none;
+            font-weight: 500;
+            transition: all 0.3s ease;
+            border: 1px solid rgba(255, 255, 255, 0.3);
+        }
+        .link:hover {
+            background: rgba(255, 255, 255, 0.3);
+            transform: translateY(-2px);
+        }
+        .spinner {
+            border: 3px solid rgba(255, 255, 255, 0.3);
+            border-radius: 50%;
+            border-top: 3px solid white;
+            width: 30px;
+            height: 30px;
+            animation: spin 1s linear infinite;
+            margin: 0 auto 1rem;
+        }
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+    </style>
 </head>
 <body>
-    <h1>Loading OpenClaw Dashboard...</h1>
-    <script>
-        // This will trigger the proxy to forward the request
-        window.location.reload();
-    </script>
+    <div class="container">
+        <div class="logo">🦞</div>
+        <h1 class="title">OpenClaw Dashboard</h1>
+        <p class="subtitle">Redirecting to your AI workspace...</p>
+        <div class="spinner"></div>
+        <p>If you're not automatically redirected:</p>
+        <a href="https://fe58-2601-646-100-38d0-40db-4e0d-e01-c714.ngrok-free.app" class="link">
+            Click here to access your dashboard
+        </a>
+    </div>
 </body>
 </html>

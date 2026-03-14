@@ -1,18 +1,3 @@
 {
-  "functions": {
-    "api/proxy.js": {
-      "runtime": "@vercel/node@3.0.0"
-    }
-  },
-  "rewrites": [
-    {
-      "source": "/api/(.*)",
-      "destination": "/api/proxy"
-    },
-    {
-      "source": "/(.*)",
-      "destination": "/api/proxy"
-    }
-  ],
-  "outputDirectory": "."
+  "version": 2
 }
